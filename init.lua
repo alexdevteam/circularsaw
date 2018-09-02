@@ -51,11 +51,11 @@ else
 end
 
    
--- how many microblocks does this shape at the output inventory cost?
-circularsaw.cost_in_microblocks = { 6, 4, 7, 2, 1, 3, 3,
-                                 6, 4, 7, 2, 1, 3, 3,
-                                 6, 2, 7, 2, 6, 3, 0,
-                                 4, 2, 7, 0, 6, 3, 0 };
+-- Cost == 0 so no blocks are used in creative
+circularsaw.cost_in_microblocks = { 0, 0, 0, 0, 0, 0, 0,
+                                 0, 0, 0, 0, 0, 0, 0,
+                                 0, 0, 0, 0, 0, 0, 0,
+                                 0, 0, 0, 0, 0, 0, 0 };
 
 -- anz: amount of input material in microblocks
 circularsaw.get_stair_output_inv = function( modname, material, anz, max )
